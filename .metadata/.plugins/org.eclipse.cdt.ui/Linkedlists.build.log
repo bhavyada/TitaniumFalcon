@@ -1,0 +1,13 @@
+12:55:40 **** Incremental Build of configuration Debug for project Linkedlists ****
+Info: Internal Builder is used for build
+g++ -o Linkedlists.exe insert_at_head_tail.o Reverse_linkedlist_by_half.o 
+Reverse_linkedlist_by_half.o: In function `Print_Linked_list(Node*)':
+C:\Studies\Git\CProgramming\Titanium_Falcon\Linkedlists\Debug/../Reverse_linkedlist_by_half.cpp:33: multiple definition of `Print_Linked_list(Node*)'
+insert_at_head_tail.o:C:\Studies\Git\CProgramming\Titanium_Falcon\Linkedlists\Debug/../insert_at_head_tail.cpp:60: first defined here
+Reverse_linkedlist_by_half.o: In function `main':
+C:\Studies\Git\CProgramming\Titanium_Falcon\Linkedlists\Debug/../Reverse_linkedlist_by_half.cpp:44: multiple definition of `main'
+insert_at_head_tail.o:C:\Studies\Git\CProgramming\Titanium_Falcon\Linkedlists\Debug/../insert_at_head_tail.cpp:70: first defined here
+collect2.exe: error: ld returned 1 exit status
+
+12:55:41 Build Finished (took 1s.830ms)
+

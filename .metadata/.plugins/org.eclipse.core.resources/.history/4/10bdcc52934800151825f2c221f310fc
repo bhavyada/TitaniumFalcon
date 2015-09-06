@@ -1,0 +1,44 @@
+//============================================================================
+// Name        : Merge_two_sorted_list.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+// This program is to merge two sorted linked list. So we create a dummy node and we keep inserting
+// to the end of the dummy node
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<iostream>
+
+struct Node
+{
+	int Data;
+	struct Node* Next;
+};
+
+int main()
+{
+	struct Node* head1 = NULL;
+	struct Node* head2 = NULL;
+
+	push(&head1,2);
+	push(&head1,8);
+	push(&head1,9);
+	push(&head1,10);
+	push(&head1,23);
+	Print_Linked_list(head1);
+
+	push(&head2,3);
+	push(&head2,6);
+	push(&head2,9);
+	push(&head2,16);
+	push(&head2,29);
+	Print_Linked_list(head2);
+
+	Merge_linked_list
+
+
+}

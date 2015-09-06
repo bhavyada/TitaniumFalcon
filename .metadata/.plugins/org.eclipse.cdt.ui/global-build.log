@@ -1,0 +1,6 @@
+15:48:51 **** Rebuild of configuration Debug for project Insertion_sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Insertion_sort.o" "..\\src\\Insertion_sort.c" 
+gcc -o Insertion_sort.exe "src\\Insertion_sort.o" 
+Info: Nothing to build for Insertion_sort
+Info: Nothing to build for Insertion_sort

@@ -1,0 +1,62 @@
+//============================================================================
+// Name        : Reverse_linkedlist_by_half.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+/*
+ * Reverse_linkedlist_by_half.cpp
+ *
+ *  Created on: Aug 21, 2015
+ *      Author: Bhavya
+ */
+
+// This program gives an illustration to reverse the linked list by half
+// Input linkedlist : 1->2->3->4->5->6->NULL
+// Output linkedlist: 3->2->1->6->5->4->NULL
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+
+struct Node
+{
+	int Data;
+	struct Node* Next;
+};
+
+void Push(struct Node** head, int value)
+{
+	struct Node* Newnode = (struct Node*)malloc(sizeof(struct Node));
+	Newnode->Data = value;
+	Newnode->Next = NULL;
+
+	Newnode->Next = *head;
+	*head = Newnode;
+}
+
+void Print_Linked_list(struct Node* head)
+{
+	struct Node* current = head;
+	while(current != NULL)
+	{
+		printf("%d",current->Data);
+		current = current->Next;
+	}
+}
+
+
+int main()
+{
+	struct Node* head = NULL;
+	Push(&head, 6);
+	Push(&head, 5);
+	Push(&head, 4);
+	Push(&head, 3);
+	Push(&head, 2);
+	Push(&head, 1);
+	Print_Linked_list(head);
+}
+
